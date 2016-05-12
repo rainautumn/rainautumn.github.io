@@ -3,24 +3,71 @@ html, body {
     padding: 0;
     background-color: #ffffff;
 }
-.static{
-    position: fixed;    
+header{
+    top: 0;
+    position: fixed; 
+    padding: 7px 0 7px 0;
+    width: 100%;
+    min-width: 700px;
+    background-color: rgba(219, 219, 219, 0.31);
+    box-shadow: 0 0 10px rgba(0,0,0,0.5); 
+    z-index: 99;
 }
 
-.logo{
-    width: 668;
+footer{
     position: relative;
     margin-left: auto;
-    margin-right: auto;
+    padding-left: auto;
+    margin-top: 40px;
+    width: 100%;
+    color: gray;
+    text-align: center;
+    bottom: 0;
 }
 
+nav{
+    float: right;
+    margin-top: -20px;
+    margin-right: 50px;
+    font-size: 16pt;
+}
+
+.static{
+    position: absolute;    
+}
+
+a
+{
+    text-decoration: none;
+    cursor: pointer;
+    color: inherit;
+}
+
+a:hover
+{
+    text-decoration: none;
+    cursor: pointer;
+    color: inherit;
+        -webkit-filter: blur(1px);
+		-moz-filter: blur(1px);
+		-ms-filter: blur(1px);
+		-o-filter: blur(1px);
+		filter: blur(1px);
+}
+
+.logo_oilwater{
+    position: relative;
+    height: 400px;
+    width: 400px;
+    margin-top: 0px;
+}
 .loader{
-    position: fixed;
-    -webkit-animation: preloader 1.5s infinite linear;
-    -moz-animation: preloader 1.5s infinite linear;
-    -ms-animation: preloader 1.5s infinite linear;
-    -o-animation: preloader 1.5s infinite linear;
-    animation: preloader 1.5s infinite linear;
+    position: absolute;
+    -webkit-animation: preloader 2.5s infinite linear;
+    -moz-animation: preloader 2.5s infinite linear;
+    -ms-animation: preloader 2.5s infinite linear;
+    -o-animation: preloader 2.5s infinite linear;
+    animation: preloader 2.5s infinite linear;
 }
 
 @-webkit-keyframes preloader {
@@ -48,4 +95,69 @@ html, body {
     width: 250;
     margin-left: auto;
     margin-right: auto;
+}
+
+#name {
+    margin-left: 5px;
+    font-size: 27;
+}
+
+.block {
+    position: relative;    
+    align-content: center;
+    overflow:hidden;
+    margin: 0px;
+    padding: 0px;
+    margin-top: 40px;
+    width: 100%;
+    height: 400px;
+}
+
+content {
+    position: absolute;
+    padding-top: 50px;
+    width: 100%;
+}
+
+.empty {
+    height: 100%;
+    position: relative;
+     margin-right: 0px;
+    margin-top: 0px;
+    padding: 0px;
+}
+
+.proj {
+/*    white-space:nowrap;*/
+    position: relataive;
+    margin-left: auto;
+    margin-right: auto;
+    width: 810px;
+    height: 400px;
+}
+
+.left {
+    display:inline-block;
+    position: relative;
+    padding: 0px;
+    margin-left: 0px;
+    margin-top: 0px;
+    width: 400px;
+    height: 400px;
+}
+
+.right {
+    display:inline-block;
+    position: absolute;
+    margin-right: 0px;
+    margin-top: 0px;
+    padding: 0px;
+    width: 400px;
+    height: 400px;
+}
+
+center {
+    text-align: center;
+    width: 100%;
+    
 }
