@@ -1,0 +1,65 @@
+<html>
+    
+    <head>
+        <title>lampspring</title>
+        <style>
+            html, body {
+                margin: 0;
+                padding: 0;
+                background-color: #000000;
+                color: #ff8800;
+            }
+
+
+            .parallax {
+                perspective: 1px;
+                height: 100vh;
+                overflow-x: hidden;
+                overflow-y: auto;
+            }
+            .parallax__layer {
+                position: absolute;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+            }
+            .parallax__layer--back {
+                 transform: translateZ(-2px) scale(3);
+                background-image: url(lamps.jpg);
+                background-repeat: no-repeat;
+                background-size:cover;
+            }
+            .parallax__group {
+                position: relative;
+                height: 100vh;
+                transform-style: preserve-3d;
+                
+            }    
+            
+            .soon {
+                margin: auto;
+                text-align: center;
+                color: rgba(255, 136, 0, 0.77);
+                font-size: 32pt;
+                background-color: black;
+                height: 100%;
+            }
+        
+        </style>
+    </head>
+    
+    <body>
+        <div class="parallax">
+              <div class="parallax__group">
+                <div class="parallax__layer parallax__layer--back">
+                </div>
+              </div>
+
+              <div class="parallax__group">
+                        <div class="soon">COMING SOON</div>
+              </div>
+        </div>
+    </body>
+    
+</html>
